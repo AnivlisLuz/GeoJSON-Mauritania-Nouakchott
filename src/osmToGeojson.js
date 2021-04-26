@@ -13,8 +13,8 @@ const geojsonBuilder = () =>
       stroke: "#164154",
       "stroke-width": 5,
     }),
-    stopNameSeparator: " y ",
-    stopNameFallback: "innominada",
+    stopNameSeparator: " & ",
+    stopNameFallback: "",
   });
 
 module.exports = geojsonBuilder;

@@ -70,6 +70,9 @@ function exportGtfs(outputPath) {
     agencyUrl: (feature) => {
       return ""
     },
+    agencyId: (feature) => {
+      return feature.properties.operator
+    },
     stopId: (coords, coordsIndex, feature, featureIndex) => {
 
       const nodeId = feature.geometry.nodes[coordsIndex];
